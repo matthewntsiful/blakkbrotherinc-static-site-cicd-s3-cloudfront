@@ -1,9 +1,9 @@
 # Blakk Brother Inc - Cloud & DevOps Solutions
 
 [![Deploy to S3 and CloudFront](https://github.com/matthewntsiful/blakkbrotherinc-static-site-cicd-s3-cloudfront/actions/workflows/main.yml/badge.svg)](https://github.com/matthewntsiful/blakkbrotherinc-static-site-cicd-s3-cloudfront/actions/workflows/main.yml)
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=matthewntsiful_blakkbrotherinc-static-site-cicd-s3-cloudfront&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=matthewntsiful_blakkbrotherinc-static-site-cicd-s3-cloudfront)
-[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=matthewntsiful_blakkbrotherinc-static-site-cicd-s3-cloudfront&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=matthewntsiful_blakkbrotherinc-static-site-cicd-s3-cloudfront)
-[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=matthewntsiful_blakkbrotherinc-static-site-cicd-s3-cloudfront&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=matthewntsiful_blakkbrotherinc-static-site-cicd-s3-cloudfront)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=blakkbrotherinc-static-site&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=blakkbrotherinc-static-site)
+[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=blakkbrotherinc-static-site&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=blakkbrotherinc-static-site)
+[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=blakkbrotherinc-static-site&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=blakkbrotherinc-static-site)
 [![AWS](https://img.shields.io/badge/AWS-S3%20%7C%20CloudFront-orange?logo=amazon-aws)](https://aws.amazon.com/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
@@ -11,9 +11,11 @@ A modern, responsive static website showcasing Blakk Brother Inc's cloud and Dev
 
 ## 🚀 Live Demo
 
-**Website (S3 Static Hosting):** https://blakkbrotherinc-static-site-cicd-s3-cloudfront.s3.amazonaws.com/index.html
+**Primary Website (CloudFront CDN):** https://d2unm2fobk03v2.cloudfront.net/
 
-> ⚡️ **Note:** CloudFront is not used for the public demo to avoid extra charges. The site is served directly from the S3 bucket for demonstration purposes.
+**Alternative (S3 Static Hosting):** http://blakkbrotherinc-21-06-25.s3-website.eu-north-1.amazonaws.com/
+
+> ⚡️ **Recommended:** Use the CloudFront URL for optimal performance, security (HTTPS), and global CDN benefits. The S3 URL is provided as a fallback option.
 
 ## 📋 Table of Contents
 
@@ -276,6 +278,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-**Built with ❤️ by Blakk Brother Inc**
+**Built by Blakk Brother Inc**
 
 *Crafting Excellence, Building Legacy*
