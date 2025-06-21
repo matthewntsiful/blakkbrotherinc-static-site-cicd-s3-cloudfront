@@ -57,32 +57,32 @@ jobs:
         run: |
           aws cloudfront create-invalidation --distribution-id ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }} --paths "/*"
 
-  notify-success:
-    needs: [sonarqube, deploy]
-    uses: ./.github/workflows/slack.yml
-    with:
-      status: 'success'
-      job_name: 'Deployment'
-    secrets:
-      SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
-    if: success()
+#   notify-success:
+#     needs: [sonarqube, deploy]
+#     uses: ./.github/workflows/slack.yml
+#     with:
+#       status: 'success'
+#       job_name: 'Deployment'
+#     secrets:
+#       SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+#     if: success()
 
-  notify-failure:
-    needs: [sonarqube, deploy]
-    uses: ./.github/workflows/slack.yml
-    with:
-      status: 'failure'
-      job_name: 'Deployment'
-    secrets:
-      SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
-    if: failure()
+#   notify-failure:
+#     needs: [sonarqube, deploy]
+#     uses: ./.github/workflows/slack.yml
+#     with:
+#       status: 'failure'
+#       job_name: 'Deployment'
+#     secrets:
+#       SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+#     if: failure()
 
-  notify-cancelled:
-    needs: [sonarqube, deploy]
-    uses: ./.github/workflows/slack.yml
-    with:
-      status: 'cancelled'
-      job_name: 'Deployment'
-    secrets:
-      SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
-    if: cancelled()
+#   notify-cancelled:
+#     needs: [sonarqube, deploy]
+#     uses: ./.github/workflows/slack.yml
+#     with:
+#       status: 'cancelled'
+#       job_name: 'Deployment'
+#     secrets:
+#       SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+#     if: cancelled()
