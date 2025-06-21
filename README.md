@@ -56,6 +56,7 @@ A modern, responsive static website showcasing Blakk Brother Inc's cloud and Dev
 - **SonarCloud**: Code quality analysis
 - **Slack Integration**: Deployment notifications
 - **AWS CLI**: Infrastructure automation
+- **Dependabot**: Automated dependency updates
 
 ## 🏗 Architecture
 
@@ -169,6 +170,7 @@ The automated pipeline includes:
 ```
 .
 ├── .github/
+│   ├── dependabot.yml        # Dependabot configuration
 │   └── workflows/
 │       ├── main.yml          # Main CI/CD pipeline
 │       └── slack.yml         # Reusable Slack notifications
@@ -233,6 +235,7 @@ sonar.web.fileExtensions=.html,.css,.js
 - **IAM Least Privilege**: Minimal required permissions
 - **Secret Management**: Sensitive data in GitHub Secrets
 - **Code Scanning**: Automated security analysis via SonarCloud
+- **Dependency Updates**: Automated security patches via Dependabot
 
 ## 📈 Performance
 
