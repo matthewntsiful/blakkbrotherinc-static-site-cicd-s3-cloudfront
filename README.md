@@ -1,10 +1,14 @@
 # Blakk Brother Inc - Cloud & DevOps Solutions
 
 [![Deploy to S3 and CloudFront](https://github.com/matthewntsiful/blakkbrotherinc-static-site-cicd-s3-cloudfront/actions/workflows/main.yml/badge.svg)](https://github.com/matthewntsiful/blakkbrotherinc-static-site-cicd-s3-cloudfront/actions/workflows/main.yml)
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=blakkbrotherinc-static-site&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=blakkbrotherinc-static-site)
-[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=blakkbrotherinc-static-site&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=blakkbrotherinc-static-site)
-[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=blakkbrotherinc-static-site&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=blakkbrotherinc-static-site)
-[![AWS](https://img.shields.io/badge/AWS-S3%20%7C%20CloudFront-orange?logo=amazon-aws)](https://aws.amazon.com/)
+[![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
+[![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
+[![AWS S3](https://img.shields.io/badge/AWS%20S3-569A31?logo=amazon-s3&logoColor=white)](https://aws.amazon.com/s3/)
+[![AWS CloudFront](https://img.shields.io/badge/AWS%20CloudFront-FF9900?logo=amazon-aws&logoColor=white)](https://aws.amazon.com/cloudfront/)
+[![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-2088FF?logo=github-actions&logoColor=white)](https://github.com/features/actions)
+[![SonarCloud](https://img.shields.io/badge/SonarCloud-F3702A?logo=sonarcloud&logoColor=white)](https://sonarcloud.io/)
+[![Dependabot](https://img.shields.io/badge/Dependabot-025E8C?logo=dependabot&logoColor=white)](https://github.com/dependabot)
+[![Slack](https://img.shields.io/badge/Slack-4A154B?logo=slack&logoColor=white)](https://slack.com/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 A modern, responsive static website showcasing Blakk Brother Inc's cloud and DevOps expertise, deployed using a fully automated CI/CD pipeline with AWS S3, CloudFront, and GitHub Actions.
