@@ -66,6 +66,40 @@ A modern, responsive static website showcasing Blakk Brother Inc's cloud and Dev
 
 ## 🏗 Architecture
 
+### Infrastructure Overview
+
+```mermaid
+graph TD
+    subgraph GitHub
+        A[GitHub Repository] -->|Push/PR| B[GitHub Actions]
+        B -->|Run Tests| C[SonarCloud Analysis]
+        B -->|Deploy| D[AWS S3 Bucket]
+        B -->|Notify| E[Slack Channel]
+    end
+
+    subgraph AWS
+        D -->|Origin| F[CloudFront CDN]
+        F -->|Serves Content| G[End Users]
+        
+        H[Route 53] -->|DNS| F
+        I[ACM Certificate] -->|SSL/TLS| F
+    end
+
+    G -->|Access| J[Blakk Brother Inc Website]
+    
+    style A fill:#24292f,color:white
+    style B fill:#2088ff,color:white
+    style C fill:#f3702a,color:white
+    style D fill:#569a31,color:white
+    style E fill:#4a154b,color:white
+    style F fill:#ff9900,color:black
+    style H fill:#2f4b7c,color:white
+    style I fill:#2f4b7c,color:white
+    style J fill:#6e5494,color:white
+```
+
+### Component Details
+
 ```
 ┌─────────────────┐    ┌──────────────────┐    ┌─────────────────┐
 │   GitHub Repo   │───▶│  GitHub Actions  │───▶│   AWS S3 Bucket │
