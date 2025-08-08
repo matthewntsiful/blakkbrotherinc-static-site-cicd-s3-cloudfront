@@ -68,6 +68,8 @@ A modern, responsive static website showcasing Blakk Brother Inc's cloud and Dev
 
 ### Infrastructure Overview
 
+<div align="center">
+
 ```mermaid
 graph TD
     subgraph GitHub
@@ -97,6 +99,8 @@ graph TD
     style I fill:#2f4b7c,color:white
     style J fill:#6e5494,color:white
 ```
+
+</div>
 
 ## 🚀 Getting Started
 
